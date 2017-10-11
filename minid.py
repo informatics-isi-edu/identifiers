@@ -12,15 +12,6 @@ from versioned_catalog import VersionedCatalog
 from urllib.parse import urlparse, urlunparse
 import re
 
-
-# Usage
-# minid.py <file_path> --- will give you info on file if it has been registered
-# minid.py <identifer> -- will give you info on identifier
-# minid.py <file_path> --register --title "My file"
-# minid.py <identifier> --update --title "My file"  --status "TOMBSTONE" --obsoleted_by "ark://99999/abcd"
-# minid.py --register_user --email "Email" --name "Name" [--orcid "orcid"]
-
-
 class MINIDError(Exception):
     """Exception raised for errors in the input.
 
