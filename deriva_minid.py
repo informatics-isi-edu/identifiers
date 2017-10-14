@@ -7,7 +7,7 @@ import deriva_common
 
 from deriva_common import ErmrestCatalog, get_credential, urlquote
 from deriva_common.utils.hash_utils import compute_hashes
-from versioned_catalog import VersionedCatalog
+from deriva_common import VersionedCatalog
 
 from urllib.parse import urlparse, urlunparse
 import re
